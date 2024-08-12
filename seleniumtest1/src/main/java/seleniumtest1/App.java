@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
         WebDriverManager.edgedriver().setup();
         WebDriver driver = new EdgeDriver();
-        driver.get("https://www.facebook.com");
+        driver.get("https://magento.softwaretestingboard.com/");
         Thread.sleep(1000);
         driver.quit();
 
