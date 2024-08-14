@@ -75,7 +75,7 @@ public class WomenTab {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
             try {
                 WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-                System.out.println("Element exists: " + element);
+                System.out.println("Element exists: ");
             } catch (Exception e) {
                 System.out.println("Element does not exist.");
             }
