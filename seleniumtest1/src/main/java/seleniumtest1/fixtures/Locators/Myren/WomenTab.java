@@ -58,6 +58,45 @@ public class WomenTab {
     public static final String hs2_Review = "//a[@href='https://magento.softwaretestingboard.com/breathe-easy-tank.html#reviews']";
     public static final String hs3_Review = "//a[@href='https://magento.softwaretestingboard.com/selene-yoga-hoodie.html#reviews']";
 
+    //Hot Sellers (Buttons)
+    public static final String btn_hs_XS1 = "(//*[@id='option-label-size-143-item-166'])[1]";
+    public static final String btn_hs_XS2 = "(//*[@id='option-label-size-143-item-166'])[2]";
+    public static final String btn_hs_XS3 = "(//*[@id='option-label-size-143-item-166'])[3]";
+
+    public static final String btn_hs_S1 = "(//*[@id='option-label-size-143-item-167'])[1]";
+    public static final String btn_hs_S2 = "(//*[@id='option-label-size-143-item-167'])[2]";
+    public static final String btn_hs_S3 = "(//*[@id='option-label-size-143-item-167'])[3]";
+
+    public static final String btn_hs_M1 = "(//*[@id='option-label-size-143-item-168'])[1]";
+    public static final String btn_hs_M2 = "(//*[@id='option-label-size-143-item-168'])[2]";
+    public static final String btn_hs_M3 = "(//*[@id='option-label-size-143-item-168'])[3]";
+
+    public static final String btn_hs_L1 = "(//*[@id='option-label-size-143-item-169'])[1]";
+    public static final String btn_hs_L2 = "(//*[@id='option-label-size-143-item-169'])[2]";
+    public static final String btn_hs_L3 = "(//*[@id='option-label-size-143-item-169'])[3]";
+
+    public static final String btn_hs_XL1 = "(//*[@id='option-label-size-143-item-170'])[1]";
+    public static final String btn_hs_XL2 = "(//*[@id='option-label-size-143-item-170'])[2]";
+    public static final String btn_hs_XL3 = "(//*[@id='option-label-size-143-item-170'])[3]";
+
+    public static final String btn_hs28 = "//*[@id='option-label-size-143-item-171']";
+    public static final String btn_hs29 = "//*[@id='option-label-size-143-item-172']";
+
+    public static final String btn_AddToCart1 = "(//button[@type='submit' and @title='Add to Cart'])[1]";
+    public static final String btn_AddToCart2 = "(//button[@type='submit' and @title='Add to Cart'])[2]";
+    public static final String btn_AddToCart3 = "(//button[@type='submit' and @title='Add to Cart'])[3]";
+    public static final String btn_AddToCart4 = "(//button[@type='submit' and @title='Add to Cart'])[4]";
+
+    public static final String btn_WishList1 = "(//*[@title='Add to Wish List'])[1]";
+    public static final String btn_WishList2 = "(//*[@title='Add to Wish List'])[2]";
+    public static final String btn_WishList3 = "(//*[@title='Add to Wish List'])[3]";
+    public static final String btn_WishList4 = "(//*[@title='Add to Wish List'])[4]";
+
+    public static final String btn_Compare1 = "(//*[@title='Add to Compare'])[1]";
+    public static final String btn_Compare2 = "(//*[@title='Add to Compare'])[2]";
+    public static final String btn_Compare3 = "(//*[@title='Add to Compare'])[3]";
+    public static final String btn_Compare4 = "(//*[@title='Add to Compare'])[4]";
+
 
     // Checking if the element is existing
     public static void main(String[] args) {
@@ -69,13 +108,13 @@ public class WomenTab {
 
         try {
 
-            By locator = By.linkText(link_Tees); // Ensure this is correct
+            By locator = By.xpath(cart); // Ensure this is correct
 
             // Wait for the element to be present
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
             try {
                 WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-                System.out.println("Element exists: ");
+                System.out.println("Element exists.");
             } catch (Exception e) {
                 System.out.println("Element does not exist.");
             }
