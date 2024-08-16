@@ -13,6 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ShoppingCart {
 
+    // 1st Part Shopping Cart
     public static final String btn_ShoppingCart = "//a[@class='action showcart active']";
     public static final String btn_ProceedtoCheckout = "//button[text()='Proceed to Checkout']";
     public static final String btn_Next = "(//span[text()='Next'])[1]";
@@ -32,6 +33,22 @@ public class ShoppingCart {
 
     public static final String rdb_Fixed = "(//input[@type='radio'])[1]";
     public static final String rdb_TableRate = "(//input[@type='radio'])[2]";
+
+    // 2nd Part Shopping Cart
+    public static final String txt_Qty = "(//input[@type='number'])[1]";
+    public static final String txt_CouponCode = "//input[@id='coupon_code']";
+
+    public static final String lnk_MoveToWish = "(//span[text()='Move to Wishlist'])[1]";
+    public static final String lnk_ApplyDisc = "(//strong[text()='Apply Discount Code'])[1]";
+    public static final String lnk_CheckOutwith = "//span[text()='Check Out with Multiple Addresses']";
+
+    public static final String btn_ApplyDiscount = "//button[@value='Apply Discount']";
+    public static final String btn_UpdateShop = "//span[text()='Update Shopping Cart']";
+    public static final String btn_EditItem = "//a[@title='Edit item parameters']";
+    public static final String btn_RemoveItem = "(//a[@title='Remove item'])[2]";
+    public static final String btn_ProceedtoCheckout2 = "//span[text()='Proceed to Checkout']";
+    public static final String btn_EstimateShipping = "//strong[@id='block-shipping-heading']";
+    public static final String txt_ZipCode2 = "//span[text()='Zip/Postal Code']/parent::label/following-sibling::div//input";
 
     public static void main(String[] args) {
 
