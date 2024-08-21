@@ -1,7 +1,7 @@
 package seleniumtest1.fixtures.Locators.Runel;
 
 import java.time.Duration;
-//import org.bouncycastle.oer.its.ieee1609dot2.basetypes.Duration;
+// import org.bouncycastle.oer.its.ieee1609dot2.basetypes.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class ShoppingCart {
 
     // 1st Part Shopping Cart
-    public static final String btn_ShoppingCart = "//a[@class='action showcart active']";
+    public static final String btn_ShoppingCart = "//a[@class='action showcart']";
     public static final String btn_ProceedtoCheckout = "//button[text()='Proceed to Checkout']";
     public static final String btn_Next = "(//span[text()='Next'])[1]";
 

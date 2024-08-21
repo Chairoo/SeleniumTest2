@@ -22,9 +22,9 @@ public class Gear {
 
     // Site - https://magento.softwaretestingboard.com/Gear.html
     // Sample Code for getting locator*
-    public static final String link_Bags = "Bags";
-    public static final String link_FEquipm = "Fitness Equipment";
-    public static final String link_Watches = "Watches";
+    public static final String link_Bags = "(//a[text()='Bags'])[1]";
+    public static final String link_FEquipm = "(//a[text()='Fitness Equipment'])[1]";
+    public static final String link_Watches = "(//a[text()='Watches'])[1]";
 
     public static final String drp_SortBy = "(//select[@id='sorter'])[1]";
     public static final String drp_ShowPage = "(//select[@id='limiter'])[2]";
